@@ -1,0 +1,13 @@
+<ul class="movies">
+  <li *ngFor="let movie of movies">
+    <a href="/detail/{{movie.id}}">
+      <mat-card class="card">
+        <img class="poster" mat-card-image src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
+        <mat-card-content>
+          <p class="card-title">{{movie.title}}</p>
+          <p class="card-text">Média: {{movie.vote_average}}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+  color: rgb(27, 59, 90);
+  font-size: 250%;
+}
+
+.movies {
+  display: flex;
+  flex-direction:row;
+}
+
+.card {
+  width: 200px;
+  border-radius: 20px;
+  background: #CCC;
+  margin-right: 20px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  height: 25px;
+}
+
+.card:hover {
+  width: 250px;
+  margin-right: 10px;
+  margin-left: -10px;
+  transition: 0.3s;
+}
+
+li {
+  list-style-type:none;
+}
+
+a {
+  text-decoration:none;
+  color: black;
+}
+
+@media (max-width: 700px) and (min-width: 501px) {
+  .movies {
+    flex-direction:column;
+  }
+  .card {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .card:hover {
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .movies {
+    flex-direction:column;
+  }
+  .card {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .card:hover {
+    width: 350px;
+  }
+}
